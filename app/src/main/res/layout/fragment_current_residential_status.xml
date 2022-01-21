@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CurrentResidentialStatusFragment">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    >
+    <TextView
+        android:id="@+id/enter_your_details_headher_title"
+        android:layout_width="match_parent"
+        android:layout_height="211dp"
+        android:background="@drawable/basicimage"
+        android:gravity="left|center"
+        android:padding="25dp"
+        android:text="Where can we find you"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="130dp"
+        android:text="We detected the following addresses,\nplease select your current residential status."
+        android:textColor="@color/white"></TextView>
+    <ImageView
+        android:layout_width="25dp"
+        android:src="@drawable/backarrow"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="26dp"
+        android:layout_height="30dp">
+    </ImageView>
+</RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="210dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#E5E5E5"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Addresses found"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/backgroundshadow"
+        android:orientation="vertical"
+        android:backgroundTint="@color/white"
+        android:padding="10dp"
+        android:layout_height="130dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="end"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:background="@drawable/editicon"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content">
+            </ImageView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:background="@drawable/homeicon"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+       <TextView
+            android:layout_width="match_parent"
+            android:text="1206, Jainam elysuim, LBS Road, Near jainam \nhall, opp bhandup police station Bhandup\nwest, Mumbai - 400078"
+            android:layout_marginTop="-50dp"
+           android:layout_marginStart="25dp"
+           android:textColor="@color/black"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:textSize="12dp"
+            android:drawableLeft="@drawable/searchicon"
+            android:text="Found on your Credit Report"
+            android:textColor="#797979"
+            android:layout_height="wrap_content">
+        </TextView>
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+        <TextView
+            android:id="@+id/ConnotFindMyAddress"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textColor="#1251F1"
+            android:textSize="16dp"
+            android:layout_marginBottom="10dp"
+            android:text="Can't find my address?"
+            android:layout_height="wrap_content">
+        </TextView>
+        <Button
+            android:id="@+id/FindAddressButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:text="Continue" />
+    </LinearLayout>
+
+</FrameLayout>

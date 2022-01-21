@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MonthlyRentFragment">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    >
+
+    <TextView
+        android:id="@+id/enter_your_details_headher_title"
+        android:layout_width="match_parent"
+        android:layout_height="211dp"
+        android:background="@drawable/basicimage"
+        android:gravity="left|center"
+        android:padding="25dp"
+        android:text="Please filled\nyour basic details"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+    <ImageView
+        android:layout_width="25dp"
+        android:src="@drawable/backarrow"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="26dp"
+        android:layout_height="30dp">
+    </ImageView>
+</RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="220dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_marginBottom="5dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/first_name_enter_your_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:gravity="left"
+        android:drawableRight="@drawable/rentedicon"
+        android:text="Rented"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <View
+        android:id="@+id/viewline"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="15sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/first_name_enter_your_details"
+        android:layout_marginBottom="10dp"
+        android:background="#E8E8E8">
+    </View>
+    <TextView
+        android:id="@+id/email_id_enter_your_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="left"
+        android:textStyle="bold"
+        android:layout_below="@+id/editTextTextPersonLastName"
+        android:text="Monthly Rent"
+        android:textSize="15sp" />
+    <EditText
+        android:id="@+id/editTextTextPersonEmailIdDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/email_id_enter_your_details"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="@color/black"
+        android:text="" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+        <Button
+            android:id="@+id/ButtonClickMonthlyRent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:text="Continue" />
+    </LinearLayout>
+
+</FrameLayout>

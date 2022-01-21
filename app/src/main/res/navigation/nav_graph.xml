@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/yourBasicDetailsFragment">
+
+    <fragment
+        android:id="@+id/yourBasicDetailsFragment"
+        android:name="com.example.fragment2.YourBasicDetailsFragment"
+        android:label="fragment_your_basic_details"
+        tools:layout="@layout/fragment_your_basic_details" >
+        <action
+            android:id="@+id/action_yourBasicDetailsFragment_to_monthlyRentFragment"
+            app:destination="@id/monthlyRentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/monthlyRentFragment"
+        android:name="com.example.fragment2.MonthlyRentFragment"
+        android:label="fragment_monthly_rent"
+        tools:layout="@layout/fragment_monthly_rent" >
+        <action
+            android:id="@+id/action_monthlyRentFragment_to_currentResidentialStatusFragment"
+            app:destination="@id/currentResidentialStatusFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/currentResidentialStatusFragment"
+        android:name="com.example.fragment2.CurrentResidentialStatusFragment"
+        android:label="fragment_current_residential_status"
+        tools:layout="@layout/fragment_current_residential_status" >
+        <action
+            android:id="@+id/action_currentResidentialStatusFragment_to_currentAddressFragment"
+            app:destination="@id/currentAddressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/currentAddressFragment"
+        android:name="com.example.fragment2.CurrentAddressFragment"
+        android:label="fragment_current_address"
+        tools:layout="@layout/fragment_current_address" >
+        <action
+            android:id="@+id/action_currentAddressFragment_to_findYourAddressFragment"
+            app:destination="@id/findYourAddressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/findYourAddressFragment"
+        android:name="com.example.fragment2.FindYourAddressFragment"
+        android:label="fragment_find_your_address"
+        tools:layout="@layout/fragment_find_your_address" />
+</navigation>
