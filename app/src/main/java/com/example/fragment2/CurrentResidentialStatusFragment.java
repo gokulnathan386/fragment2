@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
@@ -84,11 +85,16 @@ public class CurrentResidentialStatusFragment extends Fragment {
                 final AlertDialog.Builder builder = new AlertDialog.Builder(getContext(),R.style.CustomAlertDialog);
                 ViewGroup viewGroup = view.findViewById(android.R.id.content);
                 View dialogView = LayoutInflater.from(v.getContext()).inflate(R.layout.customview, viewGroup, false);
+                ImageView DetectGPSLocation =dialogView.findViewById(R.id.DetectGPSLocation);
                 builder.setView(dialogView);
                 final AlertDialog alertDialog = builder.create();
-
-                       // alertDialog.dismiss();
-
+                DetectGPSLocation.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        navController.navigate(R.id.action_currentResidentialStatusFragment_to_deviceLocationFragment);
+                        alertDialog.dismiss();
+                    }
+                });
                 Window window = alertDialog.getWindow();
                 window.setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
                 window.setGravity(Gravity.BOTTOM);

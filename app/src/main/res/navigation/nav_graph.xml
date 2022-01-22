@@ -31,6 +31,9 @@
         <action
             android:id="@+id/action_currentResidentialStatusFragment_to_currentAddressFragment"
             app:destination="@id/currentAddressFragment" />
+        <action
+            android:id="@+id/action_currentResidentialStatusFragment_to_deviceLocationFragment"
+            app:destination="@id/deviceLocationFragment" />
     </fragment>
     <fragment
         android:id="@+id/currentAddressFragment"
@@ -46,4 +49,9 @@
         android:name="com.example.fragment2.FindYourAddressFragment"
         android:label="fragment_find_your_address"
         tools:layout="@layout/fragment_find_your_address" />
+    <fragment
+        android:id="@+id/deviceLocationFragment"
+        android:name="com.example.fragment2.DeviceLocationFragment"
+        android:label="fragment_device_location"
+        tools:layout="@layout/fragment_device_location" />
 </navigation>

@@ -12,6 +12,8 @@
         <entry key="app/src/main/res/drawable/enterlocationmanually.xml" value="0.19895833333333332" />
         <entry key="app/src/main/res/drawable/findmyaddressbackground.xml" value="0.19692307692307692" />
         <entry key="app/src/main/res/drawable/gpsborder.xml" value="0.19895833333333332" />
+        <entry key="app/src/main/res/drawable/gpslocation.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/selectyouraddress.xml" value="0.19895833333333332" />
         <entry key="app/src/main/res/drawable/turnoff.xml" value="0.19895833333333332" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/customview.xml" value="0.1272644927536232" />
